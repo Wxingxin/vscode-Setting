@@ -1,36 +1,10 @@
 # mongodb
 
-## mongodbdotenv
-
-```json
-"mondbdotenv": {
-  "prefix": "mondbdotenv",
-  "body": [
-    "# mongodb",
-    "MONGODB_URI=mongodb://127.0.0.1:27017",
-    "MONGODB_DB= {$1}"
-  ],
-  "description": "mondbdotenv"
-}
-```
-
-## mongodbdotenv
-
-```json
-"mondbdotcol": {
-  "prefix": "mondbdotcol",
-  "body": [
-    "MONGODB_COLLECTION_${1/(.*)/${1:/upcase}/}=${2/(.*)/${1:/downcase}/}"
-  ],
-  "description": "mongodb collection env"
-},
-```
-
 ## mongodblink
 
 ```json
-"mondblink": {
-  "prefix": "mondblink",
+"mongodblink": {
+  "prefix": "mongodblink",
   "body": [
     "// lib/db.ts",
     "//Mongoclient：MongoDB 客户端(负责连接)",
@@ -90,8 +64,8 @@
 ## mongodbcollection
 
 ```json
-"mondbcollection": {
-  "prefix": "mondbcollection",
+"mongodbaddcol": {
+  "prefix": "mongodbaddcol",
   "body": [
     "// 消息文档的基础结构，对应 MongoDB 中 messages 集合的数据格式。",
     "type xxxDoc  = {",
@@ -116,11 +90,11 @@
 },
 ```
 
-## mongodbcollectionneed
+## mongodbaddcolneed
 
 ```json
-"mongodbcollectionneed": {
-  "prefix": "mongodbcollectionneed",
+"mongodbaddcolneed": {
+  "prefix": "mongodbaddcolneed",
   "body": [
     "import { getMongoDb } from \"@/lib/db\";",
     "import { Collection } from \"mongodb\";"
@@ -129,38 +103,12 @@
 },
 ```
 
-# password
-
 ```json
-"libpassword": {
-  "prefix": "libpassword",
-  "body": [
-    "// lib/password.ts",
-    "import bcrypt from \"bcrypt\";",
-    "",
-    "const SALT_ROUNDS = 10;",
-    "",
-    "export async function hashPassword(password: string): Promise<string> {",
-    "  if (!password) {",
-    "    throw new Error(\"Password required\");",
-    "  }",
-    "  const salt_rounds = SALT_ROUNDS || 10;",
-    "",
-    "  return bcrypt.hash(password, salt_rounds);",
-    "}",
-    "",
-    "export async function verifyPassword(",
-    "  password: string,",
-    "  hash: string,",
-    "): Promise<boolean> {",
-    "  if (!password || !hash) {",
-    "    return false;",
-    "  }",
-    "",
-    "  return bcrypt.compare(password, hash);",
-    "}",
-    ""
-  ],
-  "description": "libpassword"
-},
+"only": {
+		"prefix": "q;",
+		"body": [
+			"` $1 `"
+		],
+		"description": "only"
+	},
 ```
