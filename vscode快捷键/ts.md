@@ -1,3 +1,5 @@
+# linkcollection
+
 ## nextjslinkcolbase
 
 ```js
@@ -6,29 +8,31 @@
 import { getMongoDb } from "@/lib/db";
 import { Collection } from "mongodb";
 
-type CollectionDoc = {
+// FIXME: xxxCollectionDoc
+type xxxCollectionDoc = {
 
 };
-
 // 返回强类型的消息集合，供 API 路由直接执行 insert/find 等操作。
-export async function collection<Name>(): Promise<Collection<CollectionDoc>> {
+// TODO: xxxcollection
+export async function xxxcollection<Name>(): Promise<Collection<xxxCollectionDoc>> {
   const db = await getMongoDb();
 
+  //TODO: MONGODB_COLLECTION_MESSAGES || messages
   const collectionName = process.env.MONGODB_COLLECTION_MESSAGES || "messages";
 
   if (!collectionName) {
-    throw new Error("Missing MONGODB_COLLECTION_MESSAGES");
+    throw new Error(`Missing ${collectionName}`);
   }
 
-  return db.collection<MessageDoc>(collectionName);
+  return db.collection<xxxCollectionDoc>(collectionName);
 }
 ```
 
-##
+## nextjslinkcol-pro
 
 ```json
-"nextjslinkcol": {
-  "prefix": "nextjslinkcol",
+"nextjslinkcol-pro": {
+  "prefix": "nextjslinkcol-pro",
   "body": [
     "// lib/LinkCollection.ts",
     "// 统一提供 messages 集合，避免在业务代码里重复读取环境变量或手写集合名。",
@@ -38,6 +42,39 @@ export async function collection<Name>(): Promise<Collection<CollectionDoc>> {
   "description": "nextjslinkcol"
 }
 ```
+
+### addcol
+
+```json
+
+"nextjsaddcollection": {
+  "prefix": "nextjsaddcollection",
+  "body": [
+    "// FIXME: XxxCollectionDoc * 3",
+    "type XxxCollectionDoc = {};",
+    "// 返回强类型的消息集合，供 API 路由直接执行 insert/find 等操作。",
+    "// TODO: getXxxCollection * 1",
+    "export async function getXxxCollection(): Promise<",
+    "  Collection<XxxCollectionDoc>",
+    "> {",
+    "  const db = await getMongoDb();",
+    "",
+    "  //TODO: MONGODB_COLLECTION_MESSAGES * 1 || messages * 1",
+    "  const collectionName = process.env.MONGODB_COLLECTION_MESSAGES || \"messages\";",
+    "",
+    "  if (!collectionName) {",
+    "    throw new Error(`Missing ${collectionName}`);",
+    "  }",
+    "",
+    "  return db.collection<XxxCollectionDoc>(collectionName);",
+    "}",
+    ""
+  ],
+  "description": "nextjsaddcollection"
+}
+```
+
+# minio
 
 ## nextjsminio
 
