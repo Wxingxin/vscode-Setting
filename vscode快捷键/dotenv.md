@@ -6,7 +6,7 @@
 "dotenvminio": {
   "prefix": "dotenvminio",
   "body": [
-    "# minio",
+    "# minio npm i minio",
     "MINIO_ENDPOINT=127.0.0.1 # MinlO 服务地址 (如 127.0.0.1)",
     "MINIO_PORT=9000 # 默认端口",
     "MINIO_USE_SSL=false # 是否使用 https",
@@ -26,7 +26,7 @@
 "dotenvmongodb": {
   "prefix": "dotenvmongodb",
   "body": [
-    "# mongodb",
+    "# mongodb npm i mongoose",
     "MONGODB_URI=mongodb://127.0.0.1:27017",
     "MONGODB_DB=$1 #使用的数据库名称，如果数据库不存在，MongoDB 会自动创建",
     ""
@@ -53,7 +53,7 @@
 "dotenvjose": {
   "prefix": "dotenvjose",
   "body": [
-    "# jose",
+    "# jose npm i jose",
     "SECRET_KEY=10 #服务器用于加密和验证 Token 的密钥",
     ""
   ],
@@ -67,7 +67,7 @@
 "dotenvbcrypt": {
   "prefix": "dotenvbcrypt",
   "body": [
-    "# bcrpyt",
+    "# bcrpyt npm i bcrypt npm i -D @types/bcrypt",
     "SALT_ROUNDS=10 # 加密强度",
     ""
   ],
@@ -81,7 +81,7 @@
 "dotenvemail": {
   "prefix": "dotenvemail",
   "body": [
-    "# email SMTP(QQ)",
+    "# email SMTP(QQ) npm i nodemailer",
     "SMTP_HOST=smtp.qq.com #SMTP 服务器地址",
     "SMTP_PORT=465 #465 = SSL加密",
     "SMTP_SECURE=true #true 表示使用 SSL",

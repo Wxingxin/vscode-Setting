@@ -12,7 +12,7 @@ const b = () => {};
 const bb = async () => {};
 ```
 
-# function 相关
+# 🎃🎃🎃 function 相关
 
 ## function a
 
@@ -38,7 +38,7 @@ const bb = async () => {};
 },
 ```
 
-# function 匿名函数
+# 🎃🎃🎃function 匿名函数
 
 ```json
 "funnonamearr": {
@@ -60,7 +60,7 @@ const bb = async () => {};
 },
 ```
 
-# function cn函数
+# 🎃🎃🎃 function cn函数
 
 ```json
 "funcn": {
@@ -84,7 +84,7 @@ const bb = async () => {};
 },
 ```
 
-# function cn arr函数
+# 🎃🎃🎃function cn arr函数
 
 ```json
 "funcnarr": {
@@ -108,7 +108,7 @@ const bb = async () => {};
 },
 ```
 
-# all function
+# 🎃🎃🎃 all function
 
 ```json
 "fun": {
@@ -181,7 +181,7 @@ const bb = async () => {};
 
 ```
 
-# nextjs route
+# 🎃🎃🎃 nextjs route
 
 ## nextjsfunroute
 
