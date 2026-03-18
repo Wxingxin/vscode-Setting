@@ -183,9 +183,11 @@ const bb = async () => {};
 
 # nextjs route
 
+## nextjsfunroute
+
 ```json
-"nextjsfunroute": {
-  "prefix": "nextjsfunroute",
+"nextjsroutefun": {
+  "prefix": "nextjsroutefun",
   "body": [
     "export async function $1(request: Request) {",
     "  try {",
@@ -197,5 +199,18 @@ const bb = async () => {};
     ""
   ],
   "description": "nextjsfunroute"
+},
+```
+
+## nextjsroutereturn
+
+```json
+"nextjsroutereturn": {
+  "prefix": "nextjsroutereturn",
+  "body": [
+    "return NextResponse.json($1);",
+    ""
+  ],
+  "description": "nextjsroutereturn"
 },
 ```
