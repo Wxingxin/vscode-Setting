@@ -1,5 +1,25 @@
 # dotenv
 
+# minio
+
+```json
+"dotenvminio": {
+  "prefix": "dotenvminio",
+  "body": [
+    "# minio",
+    "MINIO_ENDPOINT=127.0.0.1 # MinlO 服务地址 (如 127.0.0.1)",
+    "MINIO_PORT=9000 # 默认端口",
+    "MINIO_USE_SSL=false # 是否使用 https",
+    "MINIO_ACCESS_KEY=minioadmin # 账号",
+    "MINIO_SECRET_KEY=minioadmin # 密码",
+    "MINIO_BUCKET=🎃🎃🎃 # 存储桶名称",
+    "MINIO_PUBLIC_ENDPOINT=127.0.0.1:9000 # 公开访问地址",
+    ""
+  ],
+  "description": "dotenvminio"
+},
+```
+
 ## mongodb
 
 ```json
@@ -8,12 +28,23 @@
   "body": [
     "# mongodb",
     "MONGODB_URI=mongodb://127.0.0.1:27017",
-    "MONGODB_NAME= #使用的数据库名称，如果数据库不存在，MongoDB 会自动创建",
-    "MONGODB_COLLECTION_=",
+    "MONGODB_DB=$1 #使用的数据库名称，如果数据库不存在，MongoDB 会自动创建",
     ""
   ],
   "description": "dotenvmongodb"
 },
+```
+
+### dotenvmongodbadd
+
+```json
+"dotenvmongodbadd": {
+  "prefix": "dotenvmongodbadd",
+  "body": [
+    "MONGODB_COLLECTION_XXX=xxx"
+  ],
+  "description": "dotenvmongodbadd"
+}
 ```
 
 ## jose

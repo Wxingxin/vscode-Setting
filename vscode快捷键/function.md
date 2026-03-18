@@ -180,3 +180,22 @@ const bb = async () => {};
 ```json
 
 ```
+
+# nextjs route
+
+```json
+"nextjsfunroute": {
+  "prefix": "nextjsfunroute",
+  "body": [
+    "export async function $1(request: Request) {",
+    "  try {",
+    "    $3",
+    "  } catch (error) {",
+    "    return NextResponse.json({ message: \"$2\" }, { status: 500 });",
+    "  }",
+    "}",
+    ""
+  ],
+  "description": "nextjsfunroute"
+},
+```
