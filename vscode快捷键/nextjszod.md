@@ -43,8 +43,7 @@
   "prefix": "nexzodschema",
   "body": [
     "const schema = z.object({",
-    "${1}"
-    "});",
+    "${1}});",
     ""
   ],
   "description": "nextjs zod schema"

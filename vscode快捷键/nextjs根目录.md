@@ -343,5 +343,5 @@
     "};"
   ],
   "description": "nextjs proxy"
-}
+},
 ```
