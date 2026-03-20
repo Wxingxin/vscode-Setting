@@ -48,5 +48,5 @@
     ""
   ],
   "description": "nextjs zod schema"
-}
+},
 ```
