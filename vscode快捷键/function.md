@@ -99,7 +99,7 @@ const bb = async () => {};
 }
 ```
 
-# 🎃🎃🎃 function 相关
+# function 相关
 
 ## function a
 
@@ -125,7 +125,7 @@ const bb = async () => {};
 },
 ```
 
-# 🎃🎃🎃function 匿名函数
+# function 匿名函数
 
 ```json
 "funnonamearr": {
@@ -147,7 +147,7 @@ const bb = async () => {};
 },
 ```
 
-# 🎃🎃🎃 function cn函数
+# function cn函数
 
 ```json
 "funcn": {
@@ -171,7 +171,7 @@ const bb = async () => {};
 },
 ```
 
-# 🎃🎃🎃function cn arr函数
+# function cn arr函数
 
 ```json
 "funcnarr": {
@@ -192,112 +192,5 @@ const bb = async () => {};
     ""
   ],
   "description": "funcnarras"
-},
-```
-
-# 🎃🎃🎃 all function
-
-```json
-"fun": {
-  "prefix": "fun",
-  "body": [
-    "function $1($2) {$3}"
-  ],
-  "description": "fun"
-},
-"funas": {
-  "prefix": "funas",
-  "body": [
-    "async function $1($2) {$3}"
-  ],
-  "description": "funas"
-},
-"funnonamearr": {
-  "prefix": "funnonamearr",
-  "body": [
-    "($1) => {$2};"
-  ],
-  "description": "funnonamearr"
-},
-"funnonamearras": {
-  "prefix": "funnonamearras",
-  "body": [
-    "async ($1) => {$2};"
-  ],
-  "description": "funnonamearras"
-},
-"funcn": {
-  "prefix": "funcn",
-  "body": [
-    "const $1 = function ($2) {$3}",
-    ""
-  ],
-  "description": "funcn"
-},
-"funcnas": {
-  "prefix": "funcnas",
-  "body": [
-    "const $1 = async function ($2) {$3}",
-    ""
-  ],
-  "description": "funcnas"
-},
-"funcnarr": {
-  "prefix": "funcnarr",
-  "body": [
-    "const $1 = ($2) => {$3}",
-    ""
-  ],
-  "description": "funcnarr"
-},
-"funcnarras": {
-  "prefix": "funcnarras",
-  "body": [
-    "const $1 = async ($2) => {$3}",
-    ""
-  ],
-  "description": "funcnarras"
-},
-```
-
-```json
-
-```
-
-```json
-
-```
-
-# 🎃🎃🎃 nextjs route
-
-## nextjsfunroute
-
-```json
-"nextjsroutefun": {
-  "prefix": "nextjsroutefun",
-  "body": [
-    "export async function $1(request: Request) {",
-    "  try {",
-    "    $3",
-    "  } catch (error) {",
-    "    return NextResponse.json({ message: \"$2\" }, { status: 500 });",
-    "  }",
-    "}",
-    ""
-  ],
-  "description": "nextjsfunroute"
-},
-```
-
-## nextjsroutereturn
-
-```json
-"nextjsroutereturn": {
-  "prefix": "nextjsroutereturn",
-  "body": [
-    "return NextResponse.json($1);",
-    ""
-  ],
-  "description": "nextjsroutereturn"
 },
 ```
